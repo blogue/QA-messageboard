@@ -2,13 +2,12 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   actions: {
-    save() {
+    save(){
       var params = {
-        topic: this.get('topic'),
         author: this.get('author'),
         date: new Date(Date.now()).toString(),
         content: this.get('content'),
-        answers: [],
+        question: this.get('question'),
       };
       this.sendAction('save', params);
     }
