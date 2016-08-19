@@ -1,21 +1,21 @@
-  <h2>New question</h2>
+  <h2>Post a Question</h2>
   <div>
     <form>
       <div class="form-group">
-        <label for="author">Author</label>
+        <label for="author">Author: </label>
         {{input value=author id="author"}}
       </div>
 
       <div class="form-group">
-        <label for="topic">Topic</label>
+        <label for="topic">Topic: </label>
         {{input value=topic id="topic"}}
       </div>
 
       <div class="form-group">
-        <label for="content">Question</label>
+        <label for="content">Question: </label>
         {{input value=content id="content"}}
       </div>
 
-      <button {{action 'save'}}>Save</button>
+      <button {{action 'save'}} class="btn btn-default">Submit</button>
     </form>
   </div>

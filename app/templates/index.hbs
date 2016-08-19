@@ -1,9 +1,9 @@
-<h1>stuff</h1>
+<h1>Questions</h1>
 <ul>
   {{#each model as |question|}}
-    <li>{{#link-to 'question' question.id}}{{question.author}} | {{question.topic}}{{/link-to}}</li>
+    <li>{{#link-to 'question' question.id}} <h3>Author: {{question.author}} ~ Question: {{question.topic}}</h3>{{/link-to}}</li>
   {{/each}}
 
 </ul>
-
+<hr>
 {{new-question save="save"}}

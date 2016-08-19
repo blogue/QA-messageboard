@@ -2,15 +2,15 @@
 <div>
   <form>
     <div class="form-group">
-      <label for="author">Author</label>
+      <label for="author">Author: </label>
       {{input value=author id="author1"}}
     </div>
 
     <div class="form-group">
-      <label for="content">Answer</label>
+      <label for="content">Answer: </label>
       {{input value=content id="content1"}}
     </div>
 
-    <button {{action 'save'}}>Save</button>
+    <button class="btn btn-default" {{action 'save'}}>Submit</button>
   </form>
 </div>

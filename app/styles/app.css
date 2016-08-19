@@ -1,0 +1,39 @@
+.jumbotron {
+  color: white;
+  background-color: black;
+  margin-top: -20px;
+  border-bottom: solid lightgrey 10px;
+  font-family: cursive;
+}
+
+body {
+  background-color: #e6f3ff;
+}
+
+li {
+  list-style: none;
+}
+
+a:hover {
+  color: lightblue;
+  text-decoration: none;
+}
+hr {
+   display: block;
+   height: 1px;
+   border: 0;
+   border-top: 1px solid #ccc;
+   margin: 1em 0;
+   padding: 0;
+}
+
+footer {
+   background-color: black;
+   padding-top: 10px;
+   padding-bottom: 0px;
+   padding-left: 20px;
+   position:fixed;
+   bottom:0;
+   width:100%;
+   color: white;
+}

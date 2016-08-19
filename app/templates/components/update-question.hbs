@@ -2,20 +2,20 @@
 <div>
   <form>
     <div class="form-group">
-      <label for="author">Author</label>
+      <label for="author">Author: </label>
       {{input value=author id="author" placeholder=question.author}}
     </div>
 
     <div class="form-group">
-      <label for="topic">Topic</label>
+      <label for="topic">Topic: </label>
       {{input value=topic id="topic" placeholder=question.topic}}
     </div>
 
     <div class="form-group">
-      <label for="content">Question</label>
+      <label for="content">Question: </label>
       {{input value=content id="content" placeholder=question.content}}
     </div>
 
-    <button {{action 'update' question}}>Edit</button>
+    <button class="btn btn-default" {{action 'update' question}}>Edit</button>
   </form>
 </div>
