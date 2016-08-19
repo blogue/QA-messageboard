@@ -1,7 +1,7 @@
 <h1>stuff</h1>
 <ul>
   {{#each model as |question|}}
-  <li>{{question.author}} | {{question.topic}}</li>
+    <li>{{#link-to 'question' question.id}}{{question.author}} | {{question.topic}}{{/link-to}}</li>
   {{/each}}
 
 </ul>
