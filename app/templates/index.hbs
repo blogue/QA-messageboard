@@ -1,1 +1,9 @@
-{{outlet}}
+<h1>stuff</h1>
+<ul>
+  {{#each model as |question|}}
+  <li>{{question.author}} | {{question.topic}}</li>
+  {{/each}}
+
+</ul>
+
+{{new-question save="save"}}

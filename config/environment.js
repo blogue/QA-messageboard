@@ -7,7 +7,6 @@ module.exports = function(environment) {
       authDomain: "question-answer-board.firebaseapp.com",
       databaseURL: "https://question-answer-board.firebaseio.com",
       storageBucket: "",
-
     },
     modulePrefix: 'question-answer-board',
     environment: environment,
