@@ -3,10 +3,14 @@
 <h4>{{model.author}} | {{model.date}}</h4>
 <hr>
 <p>{{model.content}}</p>
+<hr>
+{{update-question question=model update="update"}}
 
+<hr>
+<h3>Answers:</h3>
 <ul>
   {{#each model.answers as |answer|}}
-  <li>{{answer.author}}</li>
+  <li>{{answer.author}} | {{answer.content}}</li>
   {{/each}}
 </ul>
 
