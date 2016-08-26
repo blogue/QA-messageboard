@@ -1,9 +1,9 @@
 <h1>Questions</h1>
 <ul>
+  {{answerCount}}
   {{#each model as |question|}}
     <li>{{#link-to 'question' question.id}} <h3>Author: {{question.author}} ~ Topic: {{question.topic}}</h3>{{/link-to}}</li>
   {{/each}}
-
 </ul>
 <hr>
 {{new-question save="save"}}

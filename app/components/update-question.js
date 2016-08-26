@@ -10,7 +10,7 @@ export default Ember.Component.extend({
       var params = {
         topic: this.get('topic'),
         author: this.get('author'),
-        date: new Date(Date.now()).toString(),
+        date: Date.now(),
         content: this.get('content'),
       };
       this.set('editQuestion', false);

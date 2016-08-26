@@ -1,19 +1,4 @@
-
-<h2>{{model.topic}}</h2>
-<hr>
-<h4>{{model.author}} | {{dateDisplay model.date}}</h4>
-<hr>
-<p>{{model.content}}</p>
-<hr>
-<h3>Answers:</h3>
-<ul>
-  {{#each model.answers as |answer|}}
-  <h4>{{answer.author}} | {{answer.date}}</h4>
-  <hr>
-  <p>{{answer.content}}</p>
-  <hr>
-  {{/each}}
-</ul>
+{{question-tile question=model}}
 <hr>
 {{update-question question=model update="update"}}
 <button {{action 'deletePost' model}}>Delete</button>

@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  model(params) {
+  model: function(params) {
     return this.store.findRecord('question', params.question_id);
   },
   actions: {
@@ -29,5 +29,5 @@ export default Ember.Route.extend({
         this.transitionTo('index');
       }
     }
-  }
+  },
 });
