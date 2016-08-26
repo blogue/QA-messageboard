@@ -1,0 +1,4 @@
+
+{{#each favoritePosts.favorites as |favorite|}}
+  <li><h5>{{#link-to 'question' favorite.id}} Author: {{favorite.author}} ~ Topic: {{favorite.topic}}{{/link-to}}</h5></li>
+{{/each}}

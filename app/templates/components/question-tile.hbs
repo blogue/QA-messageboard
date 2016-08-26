@@ -1,6 +1,6 @@
 <h2>{{question.topic}} | Answers: {{answerCount}}</h2>
 <hr>
-<h4>{{question.author}} | {{dateDisplay question.date}}</h4>
+<h4>{{question.author}} | {{dateDisplay question.date}} | <button {{action 'addToFavorites' question}}>favorite</button></h4>
 <hr>
 <p>{{question.content}}</p>
 <hr>
