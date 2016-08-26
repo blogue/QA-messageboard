@@ -1,3 +1,4 @@
+{{#if postQuestion}}
   <h2>Post a Question</h2>
   <div>
     <form>
@@ -19,3 +20,6 @@
       <button {{action 'save'}} class="btn btn-default">Submit</button>
     </form>
   </div>
+{{else}}
+<button {{action 'showPostForm'}}>Post Question</button>
+{{/if}}

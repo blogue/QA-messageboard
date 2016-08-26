@@ -1,7 +1,11 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  editQuestion: false,
   actions: {
+    showEdit: function() {
+      this.set('editQuestion', true);
+    },
     update(question) {
       var params = {
         topic: this.get('topic'),
@@ -9,6 +13,7 @@ export default Ember.Component.extend({
         date: new Date(Date.now()).toString(),
         content: this.get('content'),
       };
+      this.set('editQuestion', false);
       this.sendAction('update', question, params);
     }
   }
