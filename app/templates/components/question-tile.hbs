@@ -6,7 +6,7 @@
 <hr>
 <h3>Answers:</h3>
 <ul>
-  {{#each question.answers as |answer|}}
+  {{#each sortedAnswers as |answer|}}
   <h4>{{answer.author}} | {{answer.date}} | Rating: {{answer.votes}} | <button {{action 'upVote' answer}}>+</button> <button {{action 'downVote' answer}}>-</button></h4>
   <hr>
   <p>{{answer.content}}</p>
