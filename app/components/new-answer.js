@@ -9,8 +9,9 @@ export default Ember.Component.extend({
     save(){
       var params = {
         author: this.get('author'),
-        date: new Date(Date.now()).toString(),
+        date: Date.now(),
         content: this.get('content'),
+        votes: 0,
         question: this.get('question'),
       };
       this.set('postAnswer', false);
