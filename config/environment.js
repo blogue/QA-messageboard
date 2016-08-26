@@ -6,7 +6,7 @@ module.exports = function(environment) {
       apiKey: "AIzaSyA1Q3GImF07hteHp7JxfUrsWK_DK7OqGaw",
       authDomain: "question-answer-board.firebaseapp.com",
       databaseURL: "https://question-answer-board.firebaseio.com",
-      storageBucket: "",
+      storageBucket: "question-answer-board.appspot.com",
     },
     modulePrefix: 'question-answer-board',
     environment: environment,
