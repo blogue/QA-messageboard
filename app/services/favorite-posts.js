@@ -4,6 +4,8 @@ export default Ember.Service.extend({
   favorites: [],
 
   add(favorite) {
-    this.get('favorites').pushObject(favorite);
+    if(!this.get('favorites').contains(favorite)) {
+      this.get('favorites').pushObject(favorite);
+    }
   }
 });
