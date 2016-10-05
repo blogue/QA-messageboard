@@ -2,7 +2,7 @@
 
 ## Description
 
-This is a basic message board web application. It allows a user to post and edit questions as well as post answers to a question. 
+This is a message board web application created with Ember.js. A user has the ability to post a question, respond to a question with an answer and rate questions--which changes the order they're displayed.
 
 ## Prerequisites
 
